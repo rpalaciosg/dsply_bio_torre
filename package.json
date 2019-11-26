@@ -1,0 +1,23 @@
+{
+  "name": "dsply_bio_torre",
+  "version": "1.0.0",
+  "description": "Este proyecto es creado como parte de prueba técnica en Torre.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpalaciosg/dsply_bio_torre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpalaciosg/dsply_bio_torre/issues"
+  },
+  "homepage": "https://github.com/rpalaciosg/dsply_bio_torre#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
