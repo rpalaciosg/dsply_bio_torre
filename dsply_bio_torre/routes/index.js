@@ -10,42 +10,24 @@ router.get('/', async function(req, res, next) {
   .then( httpResponse => {
       // if (httpResponse.data)        
       const bios = httpResponse.data.person.picture;
-      console.log(bios);
       res.locals.photo = bios;
+      res.locals.person = httpResponse.data.person;
+      res.locals.numExperiences = Object.entries(httpResponse.data.experiences).length;
+      res.locals.numJobs = Object.entries(httpResponse.data.jobs).length;
+      res.locals.numProjects = Object.entries(httpResponse.data.projects).length;
+      res.locals.numStrengths = Object.entries(httpResponse.data.strengths).length;
+      res.locals.numInterest = Object.entries(httpResponse.data.interests).length;
+      res.locals.numPublications = Object.entries(httpResponse.data.publications).length;
+      res.locals.numEducation = Object.entries(httpResponse.data.education).length;
+      res.locals.numLanguages = Object.entries(httpResponse.data.languages).length;
+      console.log(res.locals.person);
       res.render('index.html');
   }).catch(err => {
        console.log('Error:', err);
        next(err);
   });
     
-  // res.locals.photo = getBioUser(res.locals.idUserDef);
-  // res.render("index");
-  // } catch (err) {
-  //   next(err);
-  // }
 });
 
-
-// const getBioData = async (idUser) => {
-//   try {
-//       return await axios.get(res.locals.urlBio + idUser);
-//   } catch (err) {
-//       console.log(err);
-//   }
-// }
-
-// const getBioUser = async (idUser) => {
-//   const bioUser = await getBioData(idUser);
-//   // console.log(bioUser.data);
-//   // objBio = Json.parse(bioUser.data.person;
-//   // objPerson = properties.data.person;
-//   const photoP = bioUser.data.person.picture;
-//   // nameP = objPerson.name;
-//   // userIdP = objPerson.publicId;
-//   // objExperiences = properties.data.experiences;
-//   console.log(bioUser.data.person);
-//   // console.log(photoP);
-//   return photoP;
-// }
 
 module.exports = router;

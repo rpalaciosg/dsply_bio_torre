@@ -54,9 +54,9 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Richard Palacios</h5>
-                    <p class="card-text">Web Developer</p>
-                    <p class="card-text"><small class="text-muted">richardapalaciosg</small></p>
+                    <h5 class="card-title"><%=person.name%></h5>
+                    <p class="card-text"><%=person.professionalHeadline%></p>
+                    <p class="card-text"><small class="text-muted"><%=person.publicId%></small></p>
                   </div>
                 </div>
               </div>
@@ -88,7 +88,7 @@
           <a href="#">
             <div class="card-counter danger">
               <i class="fa fa-ticket"></i>
-              <span class="count-numbers" id="_experiences">599</span>
+              <span class="count-numbers" id="_experiences"><%=numExperiences%></span>
               <span class="count-name">Experiences</span>
             </div>
           </a>
@@ -98,7 +98,7 @@
           <a href="#">
             <div class="card-counter success">
               <i class="fa fa-database"></i>
-              <span class="count-numbers" id="_jobs">6875</span>
+              <span class="count-numbers" id="_jobs"><%=numJobs%></span>
               <span class="count-name">Jobs</span>
             </div>
           </a>
@@ -108,7 +108,7 @@
           <a href="#">
             <div class="card-counter info">
               <i class="fa fa-users"></i>
-              <span class="count-numbers" id="_projects">35</span>
+              <span class="count-numbers" id="_projects"><%=numProjects%></span>
               <span class="count-name">Projects</span>
             </div>
           </a>
@@ -118,7 +118,7 @@
           <a href="#">
             <div class="card-counter info">
               <i class="fa fa-users"></i>
-              <span class="count-numbers" id="_strengths">35</span>
+              <span class="count-numbers" id="_strengths"><%=numStrengths%></span>
               <span class="count-name">Strengths</span>
             </div>
           </a>
@@ -127,7 +127,7 @@
           <a href="#">
             <div class="card-counter success">
               <i class="fa fa-database"></i>
-              <span class="count-numbers" id="_interest">6875</span>
+              <span class="count-numbers" id="_interest"><%=numInterest%></span>
               <span class="count-name">Interest</span>
             </div>
           </a>
@@ -136,7 +136,7 @@
           <a href="#">
             <div class="card-counter danger">
               <i class="fa fa-ticket"></i>
-              <span class="count-numbers" id="_publications">599</span>
+              <span class="count-numbers" id="_publications"><%=numPublications%></span>
               <span class="count-name">Publications</span>
             </div>
           </a>
@@ -145,7 +145,7 @@
           <a href="#">
             <div class="card-counter primary">
               <i class="fa fa-code-fork"></i>
-              <span class="count-numbers" id="_education">12</span>
+              <span class="count-numbers" id="_education"><%=numEducation%></span>
               <span class="count-name">Education</span>
             </div>
           </a>
@@ -154,8 +154,8 @@
           <a href="#">
             <div class="card-counter danger">
               <i class="fa fa-ticket"></i>
-              <span class="count-numbers" id="_languajes">599</span>
-              <span class="count-name">Languajes</span>
+              <span class="count-numbers" id="_languajes"><%numLanguages%></span>
+              <span class="count-name">Languages</span>
             </div>
           </a>
         </div>
