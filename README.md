@@ -34,3 +34,6 @@ Hay varias formas de iniciar o arrancar esta app:
 > npm run prod
 ```
 > Se puede conocer mas de estos comandos revisando el apartado `scripts` en el archivo de configuración *package.json*
+
+Después de iniciar la app ingresamos al url [http://localhost:3000/](http://localhost:3000/).
+
